@@ -42,4 +42,5 @@ RUN /opengrok/bin/OpenGrok deploy
 EXPOSE 8080
 EXPOSE 22
 ADD scripts /scripts
+RUN chmod 0755 /scripts/start.sh
 CMD ["/scripts/start.sh"]
